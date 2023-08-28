@@ -1,4 +1,4 @@
-print('Bem-vindo(a) a Sorveteria da Jeniffer Marcondes das Almas')
+print('Bem-vindo a Sorveteria da Jeniffer Marcondes das Almas')
 print('')
 print('-' * 38 + 'CARDÁPIO' + '-' * 38)
 print('| Nº DE BOLAS | SABOR TRADICIONAL (tr)  | SABOR PREMIUM (pr) | SABOR ESPECIAL (es) |')
@@ -13,12 +13,12 @@ while True:
     sabor = input('Entre com o sabor desejado (tr/pr/es): ')
     sabor = sabor
     if sabor != 'tr' and sabor != 'es' and sabor != 'pr':
-        print('Sabor inválido! Tente novamente!')
+        print('Sabor inválido. Tente novamente')
         continue  # se o usuário digitar algo inválido volta para o começo do while
 
     qtd_bolas = input('Entre com o número de bolas de sorvete desejado (1/2/3): ')
     if qtd_bolas != '1' and qtd_bolas != '2' and qtd_bolas != '3':
-        print('Número de bolas de sorvete inválido! Tente novamente!')
+        print('Número de bolas de sorvete inválido. Tente novamente')
         continue
 
     if sabor == 'tr' and qtd_bolas == '1':
@@ -57,7 +57,7 @@ while True:
         print('Você pediu 3 bolas de sorvete no sabor ESPECIAL: R$ 20,00')
         acumulador = acumulador + 20
 
-    pedir_mais = input(' Deseja pedir mais algum sorvete (S / Digite ou tecla)?: ')
+    pedir_mais = input(' Deseja mais algum sorvete (s/digite ou tecla)?: ')
     pedir_mais = pedir_mais.upper()  # resolvo o problema digitar s e S ou n e N
     if pedir_mais == 'S':
         continue
